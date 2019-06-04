@@ -35,7 +35,7 @@ public struct User : Codable {
 public struct Mission : Codable {
     public var id: UUID?
     //    let duration: DateInterval?
-    public var duration: String?
+    public var duration: Int?
     public var description: String?
     public var image: String?
     public var mainSubject: String?
@@ -44,7 +44,7 @@ public struct Mission : Codable {
     public var elo : Elo
     
     public init(id: UUID?,
-                duration: String?,
+                duration: Int?,
                 description: String?,
                 image: String?,
                 mainSubject: String?,
