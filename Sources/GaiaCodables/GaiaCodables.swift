@@ -42,6 +42,7 @@ public struct Mission : Codable {
     public var explanations: String?
     public var tips : [String]?
     public var elo : Elo
+    public var results: String?
     
     public init(id: UUID?,
                 duration: Int?,
@@ -50,7 +51,8 @@ public struct Mission : Codable {
                 mainSubject: String?,
                 explanations: String?,
                 tips : [String]?,
-                elo : Elo
+                elo : Elo,
+                results: String?
         ) {
         self.id = id
         self.duration = duration
@@ -60,6 +62,7 @@ public struct Mission : Codable {
         self.explanations = explanations
         self.tips  = tips
         self.elo  = elo
+        self.results = results
     }
 }
 
