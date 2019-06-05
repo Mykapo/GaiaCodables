@@ -5,7 +5,7 @@ public enum Level: Int, Codable {
 }
 
 public enum BGColor: String, Codable {
-    case blue, pink, purple
+    case green, pink, purple
 }
 
 public struct User : Codable {
