@@ -92,15 +92,3 @@ public struct Elo : Codable {
 enum eloCategory : String {
     case energy, waste, food
 }
-
-infix operator ==
-extension Mission {
-    public static func == (_ lhs: Mission, _ rhs: Mission) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
-extension User {
-    public static func == (_ lhs: User, _ rhs: User) -> Bool {
-        return lhs.id == rhs.id
-    }
-}
