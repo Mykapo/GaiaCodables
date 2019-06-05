@@ -4,6 +4,10 @@ public enum Level: Int, Codable {
     case jeunepousse, arbuste, vieuxchene
 }
 
+public enum BGColor: String, Codable {
+    case blue, pink, purple
+}
+
 public struct User : Codable {
     public var id: UUID?
     public var email: String?
@@ -38,6 +42,7 @@ public struct Mission : Codable {
     public var duration: Int?
     public var description: String?
     public var image: String?
+    public var bgColor: BGColor?
     public var mainSubject: String?
     public var explanations: String?
     public var tips : [String]?
@@ -52,7 +57,8 @@ public struct Mission : Codable {
                 explanations: String?,
                 tips : [String]?,
                 elo : Elo,
-                results: String?
+                results: String?,
+                bgColor: BGColor?
         ) {
         self.id = id
         self.duration = duration
@@ -63,6 +69,7 @@ public struct Mission : Codable {
         self.tips  = tips
         self.elo  = elo
         self.results = results
+        self.bgColor = bgColor
     }
 }
 
